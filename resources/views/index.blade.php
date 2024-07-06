@@ -1,48 +1,5 @@
 
     @extends('layout.header')
-        
-        <!-- particles -->
-        <div id="particles-js"></div>	
-
-		<!-- START PRELOADER -->
-		<div class="preloader">
-			<div class="status">
-				<div class="status-mes"></div>
-			</div>
-		</div>
-		<!-- END PRELOADER -->		
-
-		<!-- START NAVBAR -->  
-		<div id="navigation" class="fixed-top navbar-light bg-faded site-navigation">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-2 col-md-3 col-sm-4">
-						<div class="site-logo">
-							<a class="navbar-logo" href="index.html"><img src="assets/img/logo.png" alt=""></a>
-						</div>
-					</div><!--- END Col -->					
-					<div class="col-lg-10 col-md-9 col-sm-8">
-						<div class="header_right">
-							<nav id="main-menu" class="ml-auto">
-								<ul>
-									<li><a href="#home">Home</a></li>
-									<li><a href="#about">About</a></li>
-									<li><a href="#platform">Platform</a></li>
-									<li><a href="#mvp">MVP</a></li>
-									<li><a href="#token_sale">Tokens</a></li>
-									<li><a href="#roadmap">Roadmap</a></li>								  
-									<li><a href="#contact">Contact</a></li>
-									<li><a id="modal_trigger" class="block-menu" href="#modal">Login</a></li>
-								</ul>
-							</nav>
-							<div id="mobile_menu"></div>
-						</div>
-					</div><!--- END Col -->
-				</div><!--- END ROW -->
-			</div><!--- END CONTAINER -->
-		</div> 	  
-		<!-- END NAVBAR -->
-		
 		<!-- START HOME -->
 		<section id="home" class="home_bg">
 			<div class="container">
@@ -837,4 +794,5 @@
 			</div><!-- END CONTAINER  -->
 		</div>
 		<!-- END COMPANY PARTNER LOGO -->
+        
         @include('layout.footer')

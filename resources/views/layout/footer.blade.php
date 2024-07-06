@@ -76,7 +76,6 @@
 						<a href="#" class="social_box fb">
 							<span class="icon"><i class="fa fa-facebook"></i></span>
 							<span class="icon_title">Connect with Facebook</span>
-							
 						</a>
 
 						<a href="#" class="social_box google">
@@ -91,37 +90,58 @@
 
 					<div class="action_btns">
 						<div class="one_half"><a href="#" id="login_form" class="abtn">Login</a></div>
-						<div class="one_half last"><a href="#" id="register_form" class="abtn">Sign up</a></div>
+						<!-- <div class="one_half last"><a href="#" id="register_form" class="abtn">Sign up</a></div> -->
 					</div>
 				</div>
 
 				<!-- Username & Password Login form -->
 				<div class="user_login">
-					<form>
+					<form method="POST" action="{{ route('login') }}">
+						@csrf
 						<label>Email / Username</label>
-						<input type="text" />
+						<!-- <input type="text" /> -->
+						<input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" >
 						<br />
 
 						<label>Password</label>
-						<input type="password" />
+						<!-- <input type="password" /> -->
+						<input id="password" class="block mt-1 w-full" type="password"name="password"required autocomplete="current-password">
 						<br />
 
 						<div class="checkbox">
-							<input id="remember" type="checkbox" />
+							<!-- <input id="remember" type="checkbox" /> -->
+							<input id="remember_me" type="checkbox" class="rounded dark:bg-gray-900 border-gray-300 dark:border-gray-700 text-indigo-600 shadow-sm focus:ring-indigo-500 dark:focus:ring-indigo-600 dark:focus:ring-offset-gray-800" name="remember" />
 							<label for="remember">Remember me on this computer</label>
 						</div>
 
-						<div class="action_btns">
+						<!-- <div class="action_btns">
 							<div class="one_half"><a href="#" class="abtn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
 							<div class="one_half last"><a href="#" class="abtn">Login</a></div>
-						</div>
-					</form>
+						</div> -->
 
-					<a href="#" class="forgot_password">Forgot password?</a>
+
+						<div class="action_btns">
+							<!-- <div class="one_half last"><a href="#" type="submit"class="abtn">{{ __('Log in') }}</a></div> -->
+							<!-- <input  class="one_half last" type="submit" class="abtn" value="{{ __('Log in') }}"> -->
+							<button class="one_half last" type="submit" class="abtn">{{ __('Log in') }}</button>
+
+							
+							<!-- <x-primary-button class="ms-3">
+								{{ __('Log in') }}
+							</x-primary-button> -->
+						</div>
+
+					</form>
+					@if (Route::has('password.request'))
+						<a class="forgot_password" href="{{ route('password.request') }}">
+							{{ __('Forgot your password?') }}
+						</a>
+					@endif
+					<!-- <a href="#" class="forgot_password">Forgot password?</a> -->
 				</div>
 
 				<!-- Register Form -->
-				<div class="user_register">
+				<!-- <div class="user_register">
 					<form>
 						<label>Full Name</label>
 						<input type="text" />
@@ -145,7 +165,7 @@
 							<div class="one_half last"><a href="#" class="abtn">Register</a></div>
 						</div>
 					</form>
-				</div>
+				</div> -->
 			</section>
 		</div>
 		<!-- END LOGIN -->	

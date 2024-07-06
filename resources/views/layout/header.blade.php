@@ -6,10 +6,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<meta name="description" content="Kaniz - Bitcoin & Cryptocurrency ICO Landing Page HTML Template">
-		<meta name="keywords" content="bitcoin, bitcoin landing, blockchain, cryptocurrency, Cryptocurrency advisor, ICO Agency, ICO Consulting, ico landing, ico template, ico token, ico website">		
+		<meta name="description" content="Testing">
+		<meta name="keywords" content="Testing">		
 		<!-- SITE TITLE -->
-		<title>Kaniz - Bitcoin & Cryptocurrency ICO Landing Page HTML Template</title>			
+		<title>Testing</title>			
 		<!-- Latest Bootstrap min CSS -->
 		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">			
 		<!-- Google Font -->
@@ -38,3 +38,45 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
+	<body data-spy="scroll" data-offset="80">
+		<!-- particles -->
+		<div id="particles-js"></div>	
+
+		<!-- START PRELOADER -->
+		<div class="preloader">
+			<div class="status">
+				<div class="status-mes"></div>
+			</div>
+		</div>
+		<!-- END PRELOADER -->		
+
+		<!-- START NAVBAR -->  
+		<div id="navigation" class="fixed-top navbar-light bg-faded site-navigation">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2 col-md-3 col-sm-4">
+						<div class="site-logo">
+							<a class="navbar-logo" href="index.html"><img src="assets/img/logo.png" alt=""></a>
+						</div>
+					</div><!--- END Col -->					
+					<div class="col-lg-10 col-md-9 col-sm-8">
+						<div class="header_right">
+							<nav id="main-menu" class="ml-auto">
+								<ul>
+									<li><a href="#home">Home</a></li>
+									<li><a href="#about">About</a></li>
+									<li><a href="#platform">Platform</a></li>
+									<li><a href="#mvp">MVP</a></li>
+									<li><a href="#token_sale">Tokens</a></li>
+									<li><a href="#roadmap">Roadmap</a></li>								  
+									<li><a href="#contact">Contact</a></li>
+									<li><a id="modal_trigger" class="block-menu" href="#modal">Login</a></li>
+								</ul>
+							</nav>
+							<div id="mobile_menu"></div>
+						</div>
+					</div><!--- END Col -->
+				</div><!--- END ROW -->
+			</div><!--- END CONTAINER -->
+		</div> 	  
+		<!-- END NAVBAR -->
