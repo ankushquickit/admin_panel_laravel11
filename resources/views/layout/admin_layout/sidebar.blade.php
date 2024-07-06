@@ -35,8 +35,6 @@
                                 <a class="dropdown-item" href="route('logout')" onclick="event.preventDefault(); this.closest('form').submit();">{{ __('Log Out') }}</a>
                             </form>
                         </li>
-
-                        
                     </ul>
                 </div>
                 <div class="logo-element">
@@ -53,6 +51,17 @@
                     <li><a href="dashboard_5.html">Dashboard v.5 </a></li> -->
                 </ul>
             </li>
+
+            <li>
+                <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">Web-Pages</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="graph_flot.html">Contact-us List</a></li>
+                    <li><a href="{{ route('about_us') }}">About-us List</a></li>
+                    <li><a href="graph_rickshaw.html">Privacy Policy List</a></li>
+                    <li><a href="graph_chartjs.html">Terms & Conditions List</a></li>
+                </ul>
+            </li>
+
             <li>
                 <a href="layouts.html"><i class="fa fa-diamond"></i> <span class="nav-label">Layouts</span></a>
             </li>
